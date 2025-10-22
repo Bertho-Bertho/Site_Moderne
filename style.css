@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&');
+body{
+    padding: 0;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    font-family: "Raleway", serif;
+}
+
+/*******************************************BARRE DE NAViGATION***************************************/
+
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav .logo a{
+    text-decoration: none;
+    color: black;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #555454;
+    margin-right: 10px;
+}
+nav .onglets a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+/*******************************************FIN DE LA BARRE DE NAVIGATION***************************************/
+
+
+/*************************************************** PARTIE HEADER *********************************************/
+
+header{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: -4px -6px 29px -11px rgba(166,166,166, 0.75);
+    -webkit-box-shadow: -4px -6px 29px -11px rgba(166,166,166, 0.75);
+   -moz-box-shadow: -4px -6px 29px -11px rgba(166,166,166, 0.75);
+}
+header h3{
+    margin-top: -10px;
+}
+header button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: rgb(210, 210, 210);
+    color: black;
+}
+/*********************************************** FIN DE LA PARTIE HEADER **********************************/
+
+
+/***************************************************    SECTION *********************************************/
+
+.cartes {
+    margin-top: 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.cartes .carte{
+    max-width: 600px;
+    border: 3px solid black;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.cartes .carte h1{
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+.cartes .carte a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/*********************************************** FIN DE LA SECTION **********************************/
+
+
+/*************************************************** LA PARTIE FOOTER *********************************************/
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .droite {
+    display: flex;
+}
+footer .droite p{
+    margin-top: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/*********************************************** FIN DE LA APRTIE FOOTER**********************************/
+
+@media screen and (max-width:640px){
+    nav .logo{
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    header{
+        margin-top: 20px;
+    }
+}
